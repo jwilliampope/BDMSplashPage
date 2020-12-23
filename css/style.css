@@ -5,6 +5,10 @@ body {
   color: #000;
 }
 
+/* ==========
+TYPOGRAPHY
+========== */
+
 h1 {
   font-size: 2.25rem;
   font-family: "Oswald", sans-serif;
@@ -12,34 +16,87 @@ h1 {
 }
 
 h1 + p {
-  color: #000080;
+  color: #fff;
   font-weight: 700;
   font-size: 1.3125rem;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 h1 .logo-red {
   color: #ff0000;
+  text-shadow: 1px 1px 2px #fff;
+  margin: 2em 0;
 }
 
 h2 {
   font-size: 1.3125;
+  margin: 0;
 }
 
 h2 + p {
-  color: #000080;
   font-weight: 700;
-  font-size: 1rem;
+  color: #fff;
+  margin-top: 0;
   text-transform: uppercase;
 }
 
 .top-text {
   font-size: 0.625rem;
   font-weight: 700;
-  color: #000080;
+  color: #fff;
   text-transform: uppercase;
+  order: -1;
 }
 
 .fine-print {
   font-size: 0.625rem;
   letter-spacing: 1px;
+}
+
+/* =====
+INTRO
+===== */
+
+.intro {
+  background-image: url(../img/dark-ribs.png);
+  background-color: #404040;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h1 {
+  color: #fff;
+  /* text-shadow: 1px 2px 3px #fff; */
+  text-shadow: 1px 1px 2px #ff0000;
+}
+
+.main-content {
+  padding: 2em 1em;
+}
+
+.main-content p {
+  color: #000;
+}
+
+/* ==========
+MEDIA QUERY
+========== */
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
 }
