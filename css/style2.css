@@ -6,12 +6,8 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
-  color: #fff;
+  color: #404040;
   text-align: center;
-  background-image: url(../img/body.jpg);
-  background-size: cover;
-  background-color: #404040;
-  background-position: center;
 }
 
 /* =================
@@ -42,25 +38,22 @@ h1 .logo-red {
 
 h2 {
   font-size: 1.3125rem;
-  /* margin: 0; */
+  margin: 0;
 }
 
 h2 + p {
   font-weight: 700;
-  /* color: #fff; */
+  color: #fff;
   margin-top: 0;
   text-transform: uppercase;
 }
 
 .top-text {
   font-size: 0.625rem;
-  margin: 0;
-  padding-top: 2px;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   order: -1;
-  border-top: 5px solid #ff0000;
 }
 
 .fine-print {
@@ -73,7 +66,7 @@ h2 + p {
  ================= */
 
 .intro {
-  background-image: url(../img/intro-image.png);
+  background-image: url(../img/main-image.png);
   background-size: cover;
   background-color: #404040;
   background-position: center;
@@ -87,6 +80,10 @@ h2 + p {
 /* =================
  main-content section 
  ================= */
+
+.main-content {
+  padding: 2em 1em;
+}
 
 .intro > *,
 .main-content > * {
@@ -130,7 +127,7 @@ input {
 }
 
 .btn-primary {
-  background: linear-gradient(to left, #ff0000, #000080);
+  background: linear-gradient(to left, #ff713b, #ffa51d);
   color: white;
 }
 
@@ -138,19 +135,19 @@ input {
  media queries 
  ================= */
 
-@media (min-width: 650px) {
+@media (min-width: 500px) {
   body {
     font-size: 1.125rem;
     display: flex;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   h2,
   h1 + p {
-    font-size: 01.25rem;
+    font-size: 1.75rem;
   }
 
   .intro,
@@ -163,12 +160,5 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding: 2em 1em;
-    background-image: url(../img/main-content-image.png);
-    background-size: cover;
-    background-color: #404040;
-    background-position: center;
-    color: #fff;
   }
 }
