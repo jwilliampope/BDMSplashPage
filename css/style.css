@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: #000;
+  text-align: center;
 }
 
 /* ==========
@@ -13,6 +18,7 @@ h1 {
   font-size: 2.25rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h1 + p {
@@ -59,20 +65,24 @@ INTRO
 ===== */
 
 .intro {
-  background-image: url(../img/dark-ribs.png);
+  background-image: url(../img/main-image.png);
   background-color: #404040;
   background-size: cover;
   background-position: center;
   padding: 0 0.5em 1em;
   display: flex;
   flex-direction: column;
+  min-height: 50vh;
 }
 
 .intro h1 {
   color: #fff;
-  /* text-shadow: 1px 2px 3px #fff; */
   text-shadow: 1px 1px 2px #ff0000;
 }
+
+/* =========
+MAIN CONTENT
+========= */
 
 .main-content {
   padding: 2em 1em;
@@ -82,6 +92,47 @@ INTRO
   color: #000;
 }
 
+.intro > *,
+.main-content > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* +++++ */
+/* form */
+/* +++++ */
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+}
+
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  border: 1px solid #404040;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
 /* ==========
 MEDIA QUERY
 ========== */
@@ -89,14 +140,22 @@ MEDIA QUERY
 @media (min-width: 600px) {
   body {
     font-size: 1.125rem;
+    display: flex;
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   h2,
   h1 + p {
-    font-size: 1.75rem;
+    font-size: 1rem;
+  }
+
+  .intro,
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
