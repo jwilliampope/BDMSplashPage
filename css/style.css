@@ -36,7 +36,7 @@ h1 + p {
 
 h1 .logo-red {
   color: #ff0000;
-  text-shadow: 1px 1px 2px #fff;
+  text-shadow: 1px 1px 1px #888;
   /* margin: 2em 0; */
 }
 
@@ -82,6 +82,9 @@ h2 + p {
   flex-direction: column;
   justify-content: space-between;
   min-height: 50vh;
+}
+.intro h1 {
+  word-spacing: -8px;
 }
 
 /* =================
